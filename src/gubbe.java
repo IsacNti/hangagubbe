@@ -15,10 +15,16 @@ public class gubbe {
 
 
         String stri = "Hello jag heter";
+        stri = stri.toUpperCase();
         String strar[] = stri.split(" ");
         String random = (strar[new Random().nextInt(strar.length)]);
-        ArrayList<String> arr = new ArrayList<String>(Arrays.asList(strar));
+        ArrayList<String> arr = new ArrayList<String>(Arrays.asList(random));
         System.out.println(random);
+        String s=random;
+        char[] a=s.toCharArray();
+        for(char c:a) {
+            System.out.println(c);
+        }
         for (int x = 0; x < arr.size(); x++) {
             System.out.println("ordet är valt");
         }
@@ -27,6 +33,6 @@ public class gubbe {
         String gissning = in.nextLine();
         gissning = gissning.toUpperCase();
         System.out.println(gissning);
-        //for ()
+        for ()
     }
 }
